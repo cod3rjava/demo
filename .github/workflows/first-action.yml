@@ -1,0 +1,15 @@
+name: First Workflow
+# when the workflow will run eg: in jenkins you are using build now == workflow_dispatch
+on: workflow_dispatch
+jobs:
+  fist-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print My Name
+        run: echo "Deep Ochhane"
+      - name: Print Goodby
+        run: echo "Good bye!! DEEP"
+      - name: Craete A File with content hello world
+        run: echo "Hello World" >> hello.txt
+      - name: Print the file
+        run: cat hello.txt
