@@ -1,6 +1,6 @@
 name: First Workflow
 # when the workflow will run eg: in jenkins you are using build now == workflow_dispatch
-on: push
+on: [push, workflow_dispatch]
 jobs:
   fist-job:
     runs-on: ubuntu-latest
