@@ -13,5 +13,7 @@ jobs:
         run: echo "Hello World" >> hello.txt
       - name: Print the file
         run: cat hello.txt
-      - name: Print Expressions or Variables
-        run: echo "${{toJSON(github)}}"
+      # - name: Print Expressions or Variables
+      #   run: echo "${{toJSON(github)}}"
+      - name: Print repo owner name
+        run: echo "${{toJSON(github.repository_owner)}}"
