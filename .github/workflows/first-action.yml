@@ -13,3 +13,5 @@ jobs:
         run: echo "Hello World" >> hello.txt
       - name: Print the file
         run: cat hello.txt
+      - name: Print Expressions or Variables
+        run: echo ${{github}}
