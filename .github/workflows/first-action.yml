@@ -14,4 +14,4 @@ jobs:
       - name: Print the file
         run: cat hello.txt
       - name: Print Expressions or Variables
-        run: echo ${{toJSON(github)}}
+        run: echo "${{toJSON(github)}}"
