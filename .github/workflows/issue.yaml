@@ -1,0 +1,10 @@
+name: Second Workflow
+# when the workflow will run eg: in jenkins you are using build now == workflow_dispatch
+on: [workflow_dispatch, issues]
+jobs:
+  fist-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print The Issue
+        run: echo "${{toJSON(github.event)}}"
+
